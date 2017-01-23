@@ -1,6 +1,6 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+The [site](https://romka69.github.io "https://romka69.github.io") displays a random phrase from the game warcraft and its author.
 
 # Project Goals
 
