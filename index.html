@@ -5,15 +5,25 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="script/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script>
+        $.getJSON('quotes.json', function(json) {
+            var quotes_rand = json[Math.floor(Math.random() * json.length)];
+            $('<p>' + quotes_rand.phrase + '</p>').appendTo('blockquote');
+            $('<p>' + quotes_rand.signature + '</p>').appendTo('quote-box');
+            $('<img src="images/' + quotes_rand.image_author + '.gif">').appendTo('quote-box');
+        });
+    </script>
 </head>
-<body class="page">
-    <div class="page__wrapp">
-        <div class="quote-box">
-            <blockquote>
-            </blockquote>
+<body>
+    <div class="page">
+        <div class="page__wrapp">
+            <div class="quote-box">
+                <blockquote>
+                </blockquote>
+            </div>
         </div>
     </div>
-    <script src="script/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="script/quotes.js" type="text/javascript"></script>
+
 </body>
 </html>
