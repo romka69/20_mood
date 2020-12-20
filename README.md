@@ -1,6 +1,6 @@
 # Site for the Mood
 
-The [site](https://romka69.github.io/warcraft "https://romka69.github.io/warcraft") displays a random phrase from the game warcraft and its author.
+The [site](https://zakharoff.github.io/warcraft "https://zakharoff.github.io/warcraft") displays a random phrase from the game warcraft and its author.
 
 # Project Goals
 
